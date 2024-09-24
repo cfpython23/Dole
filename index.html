@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>丸丸大学 学園祭</title>
+  <style>
+    /* Reset CSS */
+    body, h1, h2, h3,h4, p, ul, li, input, textarea {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f7ff;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #1565c0;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #2196f3;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      display: block;
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #f2f7ff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #1565c0;
+    }
+    .ko h4 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #1565c0;
+    }
+    .ko h4{
+      background-color: #f2f7ff;
+      padding: 100px 20px;
+      color: #1565c0;
+      }
+
+    .hero p {
+      font-size: 24px;
+      color: #1565c0;
+    }
+
+    /* Sponsorship Form Section */
+    .sponsorship {
+      background-color: #1565c0;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .sponsorship h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .sponsorship p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .sponsorship form input,
+    .sponsorship form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .sponsorship form input[type="submit"] {
+      background-color: #2196f3;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Festival Content Section */
+    .content {
+      background-color: #f2f7ff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .content h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #1565c0;
+    }
+     .content h4 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #1565c0;
+    }
+
+      .content h4{
+        background-color:1565c0;
+        padding: 50px 20px;
+        text-align: center;
+
+      }
+
+    .content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #1565c0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1565c0;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>丸丸大学 学園祭</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#hero">ホーム</a></li>
+      <li><a href="#sponsorship">協賛企業募集</a></li>
+      <li><a href="#content">学園祭内容</a></li>
+      <li><a href="#content">テーマ募集</a></li>
+    </ul>
+  </nav>
+<section id="sponsors" class="content">
+    <h3>協賛企業</h3>
+    <ul>
+      <li><a href="https://example.com">企業A</a></li>
+      <li><a href="https://example.com">企業B</a></li>
+      <li><a href="https://example.com">企業C</a></li>
+      <!-- 追加の協賛企業をここに追加 -->
+    </ul>
+  </section id="hero" class="hero">
+   <h3>学園祭テーマ募集</h3>
+    <p>学園祭のテーマを募集しています。ご意見をお聞かせください。</p>
+    <form action="submit_theme.php" method="post">
+      <label for="theme">テーマ:</label>
+      <input type="text" id="theme" name="theme" required>
+      <br>
+      <input type="submit" value="テーマを送信">
+    </form>
+  </section>
+
+
+
+
+  <section id="hero" class="hero">
+    <h2>宇都宮大学 学園祭へようこそ</h2>
+    <p>華やかなイベントが盛りだくさんです。</p>
+  </section>
+
+  <section id="sponsorship" class="sponsorship">
+    <h3>協賛企業募集</h3>
+    <p>宇都宮大学学園祭への協賛企業を募集しています。以下のフォームにご記入ください。</p>
+    <form action="submit_form.php" method="post">
+      <input type="text" name="company_name" placeholder="企業名" required>
+      <input type="text" name="contact_name" placeholder="担当者名" required>
+      <input type="email" name="email" placeholder="メールアドレス" required>
+      <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
+      <input type="submit" value="送信">
+    </form>
+  </section>
+
+
+  </section>
+ <section id="content" class="content">
+    <h3>学園祭内容</h3>
+    <p>学園祭では様々なイベントや展示が行われます。お楽しみに！</p>
+    <!--
+    <img src="images/previous_year.jpg" alt="去年の学園祭の様子">
+    <<img src="ダウンロード（１）" alt="12">テキスト -->
+    <p>去年の学園祭では、多くの参加者が集まり、楽しいイベントが盛りだくさんでした。さまざまなパフォーマンスや展示、フードブースなどが設置され、会場は賑やかでした。</p>
+    <!-- 追加の学園祭コンテンツをここに追加 -->
+  </section>
+  <footer>
+    <p>&copy; 2023 まるまる大学 学園祭. All rights reserved.</p>
+  </footer>
+</body>
+</html>
